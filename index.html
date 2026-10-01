@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sai Sudeep - Beginner Graphic Design Portfolio">
+  <title>Sai Sudeep | Graphic Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">SS<span>.</span></a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">ASPIRING GRAPHIC DESIGNER</p>
+        <h1>Turning simple ideas into <em>visual stories.</em></h1>
+        <p class="intro">
+          I'm Sai Sudeep, a Computer Science and Business Systems student exploring
+          graphic design, Canva, visual content and video editing.
+        </p>
+        <div class="buttons">
+          <a class="button primary" href="#work">View my work</a>
+          <a class="button secondary" href="#contact">Let's connect</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="mini-label">CURRENT FOCUS</div>
+        <h2>Design.<br>Experiment.<br>Improve.</h2>
+        <p>Posters · Thumbnails · Typography · Event Creatives</p>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>A few things I've created</h2>
+        </div>
+        <p class="section-note">Personal practice & college creative work</p>
+      </div>
+
+      <div class="gallery">
+        <article class="project project-wide">
+          <button class="image-button" data-title="Save Draft — Typography Design" data-image="assets/save-draft.png">
+            <img src="assets/save-draft.png" alt="Save Draft typography design">
+          </button>
+          <div class="project-info">
+            <span>01 / Typography</span>
+            <h3>Save Draft</h3>
+            <p>A typography-focused creative using brush lettering, texture and contrast.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <button class="image-button" data-title="Farewell 2026 — Event Poster" data-image="assets/farewell-2026.png">
+            <img src="assets/farewell-2026.png" alt="Farewell 2026 event poster">
+          </button>
+          <div class="project-info">
+            <span>02 / Event Poster</span>
+            <h3>Farewell 2026</h3>
+            <p>College farewell poster combining photography, typography and layered graphics.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <button class="image-button" data-title="Freshers Party Night — Event Poster" data-image="assets/freshers-party.png">
+            <img src="assets/freshers-party.png" alt="Freshers Party Night event poster">
+          </button>
+          <div class="project-info">
+            <span>03 / Event Poster</span>
+            <h3>Freshers Party Night</h3>
+            <p>A colorful event creative built around lighting, photography and bold display type.</p>
+          </div>
+        </article>
+
+        <article class="project project-featured">
+          <button class="image-button" data-title="Farewell Party — Promotional Thumbnail" data-image="assets/farewell-party-thumbnail.png">
+            <img src="assets/farewell-party-thumbnail.png" alt="Farewell Party promotional thumbnail">
+          </button>
+          <div class="project-info">
+            <span>04 / Thumbnail</span>
+            <h3>Farewell Party</h3>
+            <p>A promotional graphic using subject cutout, decorative elements, bold text and visual hierarchy.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div>
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>I'm learning by making.</h2>
+      </div>
+      <div class="about-copy">
+        <p>
+          I'm currently a B.Tech student at Vishnu Institute of Technology.
+          I'm at the beginning of my graphic design journey and enjoy creating
+          posters, thumbnails and visual content in Canva.
+        </p>
+        <p>
+          I also enjoy editing videos and creating visual content for social media.
+          My goal is to keep practicing, learn better design principles and build
+          a stronger portfolio through real projects.
+        </p>
+        <div class="skill-list">
+          <span>Canva</span><span>Poster Design</span><span>Typography</span>
+          <span>Thumbnails</span><span>Basic Photo Editing</span><span>Video Editing</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2>Have a project or opportunity?</h2>
+      <p>I'd be happy to connect and learn from new creative opportunities.</p>
+      <div class="contact-links">
+        <a href="mailto:gollasaisudeep10@gmail.com">gollasaisudeep10@gmail.com</a>
+        <span>·</span>
+        <a href="https://linkedin.com/in/sai-sudeep19" target="_blank" rel="noopener">LinkedIn</a>
+        <span>·</span>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p class="replace-note">Replace the Instagram link with your channel URL before publishing.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Sai Sudeep</span>
+    <span>Built as a beginner design portfolio</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="closeLightbox" aria-label="Close">×</button>
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxTitle"></p>
+  </div>
+
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxTitle = document.getElementById("lightboxTitle");
+
+    document.querySelectorAll(".image-button").forEach(button => {
+      button.addEventListener("click", () => {
+        lightboxImage.src = button.dataset.image;
+        lightboxImage.alt = button.dataset.title;
+        lightboxTitle.textContent = button.dataset.title;
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+    }
+
+    document.getElementById("closeLightbox").addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") closeLightbox();
+    });
+  </script>
+</body>
+</html>
